@@ -1,0 +1,50 @@
+package Entities;
+
+import java.util.Date;
+
+public class Customer {
+    
+    private java.util.Date created;
+    private String firstName;
+    private String lastName;
+
+
+    public Customer(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.created = new Date();
+    }
+    public Customer() {}
+    
+    public Date getCreated() {
+        return created;
+    }
+
+    public void setCreated(Date created) {
+        this.created = created;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" + "created=" + created + ", firstName=" + firstName + ", lastName=" + lastName + '}';
+    }
+    
+    
+    
+}
